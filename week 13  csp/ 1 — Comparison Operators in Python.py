@@ -81,5 +81,11 @@ else:
 
 # The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
 password = input("What is your password?: ")
-print(password.find())
+if len(password)>=8 & any(char.isdigit() for char in password):
+    print("Password is valid.")
+else:
+    print("Password is invalid." \
+    " It must contain at least 8 characters and at least one digit.")
 
+# \ = moves the string statement to the next line
+# char.isdigit() = checks if characters in password are digits
