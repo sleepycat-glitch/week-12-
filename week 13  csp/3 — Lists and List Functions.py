@@ -27,12 +27,12 @@ list.pop(-1) # removes item at last index
 print(list)
 
 # add more characters
-new_list = range(12:120)
+new_list = list(range(12, 120))
 list.extend(new_list)
 print(list)
 
 
-new_list2 = list[range(120:200)]
+new_list2 = list(range(120, 200))
 list.extend(new_list2)
 print(list)
 print(list[::3]) # prints every third number
