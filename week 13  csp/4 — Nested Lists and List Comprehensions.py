@@ -33,6 +33,11 @@ for row in num_pad:
     for num in row:
         print(num, end=" ")
     print()
+
+
+
+
+
 # Key Notes:
 
 # A list can contain other lists.
@@ -59,6 +64,7 @@ matrix = [
 print(matrix[1][2])    # 6
 
 # List comprehension
+# simpler version of nested loop
 first_col = [row[0] for row in matrix]
 print(first_col)       # [1, 4, 7]
 
@@ -68,10 +74,20 @@ print(first_col)       # [1, 4, 7]
 
 # Build a matrix variable containing 3 lists of 3 numbers each.
 
+matrix1 = [
+    [0,1,2],
+    [3,4,5],
+    [6,7,8]
+]
+
 # Print the first list.
-
+print(matrix1[0])
 # Print the second item from the third list.
-
+print(matrix1[2][1])
 # Use a list comprehension to extract the last item from each sub-list.
-
+first_col1 = [row[-1] for row in matrix1]
+print(first_col1)
 # Challenge: Create a new list containing squares of numbers from 1–10 using a comprehension.
+
+squares = [x**2 for x in range(1,11)]
+print(squares)
